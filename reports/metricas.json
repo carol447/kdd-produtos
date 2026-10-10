@@ -1,0 +1,66 @@
+{
+  "k": 2,
+  "atributos": [
+    "Preço_norm",
+    "Vendas_norm",
+    "Receita_norm"
+  ],
+  "silhueta": 0.4,
+  "davies_bouldin": 0.965,
+  "calinski_harabasz": 1013.9,
+  "etapas": {
+    "preprocessamento": {
+      "registros_entrada": 1246,
+      "duplicatas_removidas": 46,
+      "invalidos_removidos": 9,
+      "extremos_removidos": 3,
+      "limite_preco_extremo": 1886.5,
+      "sem_categoria_removidos": 12,
+      "ausentes_preenchidos": {
+        "Preço": 47,
+        "Vendas": 48
+      },
+      "registros_saida": 1176
+    },
+    "reducao": {
+      "variancia": {
+        "Preço_norm": 0.0405,
+        "Vendas_norm": 0.0341,
+        "Receita_norm": 0.0219
+      },
+      "correlacao": {
+        "Preço_norm": {
+          "Preço_norm": 1.0,
+          "Vendas_norm": -0.718,
+          "Receita_norm": 0.18
+        },
+        "Vendas_norm": {
+          "Preço_norm": -0.718,
+          "Vendas_norm": 1.0,
+          "Receita_norm": 0.556
+        },
+        "Receita_norm": {
+          "Preço_norm": 0.18,
+          "Vendas_norm": 0.556,
+          "Receita_norm": 1.0
+        }
+      },
+      "removidos_por_correlacao": [],
+      "anova_f_vs_categoria": {
+        "Preço_norm": 1185.5,
+        "Vendas_norm": 845.2,
+        "Receita_norm": 82.7
+      },
+      "anova_p_vs_categoria": {
+        "Preço_norm": 0.0,
+        "Vendas_norm": 0.0,
+        "Receita_norm": 7.431124648329611e-62
+      },
+      "atributos_selecionados": [
+        "Preço_norm",
+        "Vendas_norm",
+        "Receita_norm"
+      ]
+    }
+  }
+}
